@@ -5,23 +5,70 @@
 <!-- tähän esimerkiksi: <style> body { background-color: lightblue; </style>
 }   jolloin sivun taustan väri vaihtuu mihin sitten haluaa (CSS) -->
 
-<style>  p {
+<style> p {
     font-family: Arial;
     font-size: 16px;
 } 
+ul {
+	list-style-type: none;
+	margin: 0;
+	paddig: 0;
+	overflow: hidden;
+	background-color: #222;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	position: sticky;
+	position: -webkit-sticky; 
+	
+}
+
+li {
+	display: inline;
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align:center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(active) {
+	background-color: red;
+}
+
+.active {
+	background-color: green;
+	
+div {
+	background-color: red;
+}
+}
+		
 </style>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
-<meta name="author" content="Dani, Arttu, Saku ja Niko">
+<meta name="author" content="Dani, Arttu ja Niko">
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 <body>
+<ul>
+<li><a href="ADSN.html">Etusivu</a></li>
+<li><a href="ruokalista.html">Ruokalista</a></li>
+<li><a href="omistajat.html">Yhteystiedot</a></li>
+
+</ul>
 
 <header class="w3-container w3-red">
   <h1><center>Ravintola ADSN</center></h1>
+  <p><center>"Turun parasta ruokaa!" -Gordon Ramsay</center></p>
 </header>
+
+
 
 <img src="banner.jpg" alt="Ravintolamme Logo" style="width:100%">
 
