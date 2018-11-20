@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
 
-<title>Ravintola ADSN</title>
+<title>Ruokalista</title>
 <!-- tähän esimerkiksi: <style> body { background-color: lightblue; </style>
 }   jolloin sivun taustan väri vaihtuu mihin sitten haluaa (CSS) -->
 
-<style>  p {
-    font-family: Arial;
+<style>  
+
+body {
+    background-color: lightblue;
+} 
+
+
+
+p {
+    font-family: cursive;
     font-size: 16px;
 } 
+ul {
+	list-style-type: none;
+	margin: 0;
+	paddig: 0;
+	overflow: hidden;
+	background-color: #222;
+}
+li {
+	display: inline;
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align:center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(active) {
+	background-color: #111;
+}
+.active {
+	background-color: #4CAF50;
+}
+		
 </style>
 
 
@@ -30,12 +63,58 @@
 </ul>
 
 
-<img src="banner.jpg" alt="Ravintolamme Logo" style="width:100%">
 
 <div class="w3-container">
-  <p> Hei! Tervetuloa mahtavaan Ravintolaamme, Ylhäältä löydätte kaikki menut ja tapahtumat.
+
 <br>
-Olemme monipuolisen ruokavalion edelläkävijöitä ja löydätte jokaisesta ravintoloistamme fantastiset herkut. <br>
+
+<br> <h2> Ruokalistamme</h2></p>    
+
+  <table class="w3-table w3-bordered w3-striped">
+    <tr class="w3-red">
+      <th>Kana</th>
+      <th>Liha</th>
+      <th>Vege</th>
+    </tr>
+    <tr>
+      <td>Kanakeisari</td> 
+      <td>Lihakeisari</td>
+      <td>ApilaBurgeri</td>
+    </tr>
+    <tr>
+      <td>CrispyKana</td>
+      <td>PaahtopaistiBurger</td>
+      <td>RehuBurger</td>
+    </tr>
+    <tr>
+      <td>KanaBBQ</td>
+      <td>MegaMättö</td>
+      <td>RairuohoBurger</td>
+    </tr>
+  </table>
+</div>
+
+<div class="w3-row-padding w3-section">
+
+  <div class="w3-half">
+    <div class="w3-card">
+      
+      <div class="w3-container">
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-half">
+    <div class="w3-card">
+
+      <div class="w3-container">
+   
+      </div>
+    </div>
+  </div>
+
+</div>
 
 <footer class="w3-container w3-red">
   <h5>Omistajat</h5>
