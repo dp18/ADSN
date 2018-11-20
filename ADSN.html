@@ -5,10 +5,14 @@
 <!-- tähän esimerkiksi: <style> body { background-color: lightblue; </style>
 }   jolloin sivun taustan väri vaihtuu mihin sitten haluaa (CSS) -->
 
-<style> p {
+<style> 
+body {
+    background-color: lightblue;
+} 
+
+p {
     font-family: Arial;
     font-size: 16px;
-
 } 
 ul {
 	list-style-type: none;
@@ -23,7 +27,6 @@ ul {
 	position: -webkit-sticky; 
 	
 }
-
 li {
 	display: inline;
 	float: left;
@@ -35,11 +38,9 @@ li a {
 	padding: 14px 16px;
 	text-decoration: none;
 }
-
 li a:hover:not(active) {
 	background-color: red;
 }
-
 .active {
 	background-color: green;
 	
@@ -48,9 +49,7 @@ div {
 }
 }
 		
-
 }
-
 </style>
 
 
@@ -60,17 +59,17 @@ div {
 
 <link rel="stylesheet" type="text/css" href="style.css">
 <body>
+
+<header class="w3-container w3-red">
+  <h1><center>Ravintola ADSN</center></h1>  
+</header>
+
 <ul>
 <li><a href="ADSN.html">Etusivu</a></li>
 <li><a href="ruokalista.html">Ruokalista</a></li>
 <li><a href="omistajat.html">Yhteystiedot</a></li>
 
 </ul>
-
-<header class="w3-container w3-red">
-  <h1><center>Ravintola ADSN</center></h1>
-  <p><center>"Turun parasta ruokaa!" -Gordon Ramsay</center></p>
-</header>
 
 
 
