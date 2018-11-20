@@ -5,7 +5,12 @@
 <!-- tähän esimerkiksi: <style> body { background-color: lightblue; </style>
 }   jolloin sivun taustan väri vaihtuu mihin sitten haluaa (CSS) -->
 
-<style>  p {
+<style>  
+body {
+    background-color: lightblue;
+}
+
+p {
     font-family: Arial;
     font-size: 16px;
 } 
@@ -16,7 +21,6 @@ ul {
 	overflow: hidden;
 	background-color: #222;
 }
-
 li {
 	display: inline;
 	float: left;
@@ -28,11 +32,9 @@ li a {
 	padding: 14px 16px;
 	text-decoration: none;
 }
-
 li a:hover:not(active) {
 	background-color: #111;
 }
-
 .active {
 	background-color: #4CAF50;
 }
