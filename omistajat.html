@@ -1,33 +1,167 @@
 <!DOCTYPE html>
 <html>
 
-<title>Turku BRG Plaza - Tapahtumat</title>
+<title>Yhteystiedot</title>
 <!-- tähän esimerkiksi: <style> body { background-color: lightblue; </style>
 }   jolloin sivun taustan väri vaihtuu mihin sitten haluaa (CSS) -->
+
+<style>  
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+   
+} 
+
+p {
+    font-family: cursive;
+    font-size: 16px;
+} 
+ul {
+	list-style-type: none;
+	margin: 0;
+	paddig: 0;
+	overflow: hidden;
+	background-color: #222;
+}
+li {
+	display: inline;
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align:center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(active) {
+	background-color: #111;
+}
+.active {
+	background-color: #4CAF50;
+}
+
+
+body, html {
+    height: 100%;
+}
+
+
+.hero-image {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("kartta.jpg");
+
+  
+    height: 50%;
+
+ 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}		
+
+
+
+		
+</style>
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 <meta name="author" content="Dani, Arttu ja Niko">
 
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 
 <header class="w3-container w3-red">
-  <h1><center>Turku Burger Plaza</center></h1>
-  <p><center>"Turun parasta purilaista!" -Gordon Ramsay</center></p>
+  <h1><center>Ravintola Asburger</center></h1>
 </header>
-
 <ul>
 <li><a href="ADSN.html">Etusivu</a></li>
 <li><a href="ruokalista.html">Ruokalista</a></li>
-<li><a href="omistajat.html">Tapahtumat</a></li>
-
+<li><a href="omistajat.html">Yhteystiedot</a></li>
+<li><a href="omistajaten.html">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp In English</a></li>
 </ul>
 
 
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>Sijaintimme kartalla</h1>
+  
+   
+  </div>
+</div>
+
+
+
+
+
+<div class="w3-container">
+  
+<br>
+<p>
+<br> <h2>Henkilökunta</h2></p>    
+
+  <table class="w3-table w3-bordered w3-striped">
+    <tr class="w3-red">
+      <th>Etunimi</th>
+      <th>Sukunimi</th>
+      <th>Työtehtävä</th>
+    </tr>
+    <tr>
+      <td>Dani</td>
+      <td>Holm</td>
+      <td>Kokki</td>
+    </tr>
+    <tr>
+      <td>Arttu</td>
+      <td>Jalava</td>
+      <td>Kuski</td>
+    </tr>
+    <tr>
+      <td>Niko</td>
+      <td>Hormalainen</td>
+      <td>Kokki</td>
+    </tr>
+  </table>
+</div>
+
+<div class="w3-row-padding w3-section">
+
+  <div class="w3-half">
+    <div class="w3-card">
+  
+      <div class="w3-container">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-half">
+    <div class="w3-card">
+    
+      <div class="w3-container">
+      
+      </div>
+    </div>
+  </div>
+
+</div>
+
 <footer class="w3-container w3-red">
   <h5>Omistajat</h5>
-  <p>Dani, Arttu, Saku ja Niko. Copyright all rights reserved. TURKU AMK, PTIETS18</p>
+  <p>Dani, Arttu ja Niko. Copyright all rights reserved. TURKU AMK, PTIETS18</p>
 </footer>
 
 </body>
