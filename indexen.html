@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html>
 
-<title>Menu</title>
+<title>Frontpage</title>
 <!-- tähän esimerkiksi: <style> body { background-color: lightblue; </style>
 }   jolloin sivun taustan väri vaihtuu mihin sitten haluaa (CSS) -->
 
-<style>  
-
+<style> 
 
 body {
     font-family: "Comic Sans MS", cursive, sans-serif;
    
-}  
-
-
+} 
 
 p {
-    font-family: cursive;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 16px;
 } 
 ul {
@@ -25,6 +22,12 @@ ul {
 	paddig: 0;
 	overflow: hidden;
 	background-color: #222;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	position: sticky;
+	position: -webkit-sticky; 
+	
 }
 li {
 	display: inline;
@@ -38,40 +41,17 @@ li a {
 	text-decoration: none;
 }
 li a:hover:not(active) {
-	background-color: #111;
+	background-color: red;
 }
 .active {
-	background-color: #4CAF50;
+	background-color: green;
+	
+div {
+	background-color: red;
 }
-
-body, html {
-    height: 100%;
 }
-
-
-.hero-image {
-    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner.jpg");
-
-  
-    height: 50%;
-
- 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+		
 }
-
-
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}		
 </style>
 
 
@@ -83,51 +63,46 @@ body, html {
 <body>
 
 <header class="w3-container w3-red">
-  <h1><center>Restaurant Asburger</center></h1>
+  <h1><center>Restaurant Asburger</center></h1>  
 </header>
+
 <ul>
 <li><a href="indexen.html">Frontpage</a></li>
 <li><a href="ruokalistaen.html">Menu</a></li>
-<li><a href="omistajaten.html">Contact Details</a></li>
-<li><a href="ruokalista.html">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Suomeksi</a></li>
+<li><a href="omistajaten.html">Contact Details</a></li> 
+<li><a href="index.html">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Suomeksi</a></li>
 </ul>
 
 
-<div class="hero-image">
-  <div class="hero-text">
-    <h1>Special Offer!</h1>
-    <p>Here are -50% discount to you!</p>
-    <button>Redeem</button>
-  </div>
-</div>
 
+<center> <img src="logo.jpg" alt="Meidän logo" height="42%" width="42%"> </center>
 
 <div class="w3-container">
-
+  <p> Hey! And welcome to our restaurant. From the top panel you can find menu and contact details.
 <br>
-
-<br> <h2> Our menu</h2></p>    
+We are the forerunners of a varied diet and you will find fantastic restaurants for each of our restaurants. <br>
+<br> <h2> Our restaurants raters</h2></p>
 
   <table class="w3-table w3-bordered w3-striped">
     <tr class="w3-red">
-      <th>Chicken</th>
-      <th>Meat</th>
-      <th>Vegetarian</th>
+      <th>Name</th>
+      <th>Surename</th>
+      <th>Points</th>
     </tr>
     <tr>
-      <td>Chicken king</td> 
-      <td>Meat king</td>
-      <td>Green burger</td>
+      <td>Gordon</td>
+      <td>Ramsay</td>
+      <td>5/5, "Even better than my food"</td>
     </tr>
     <tr>
-      <td>Crispy Chicken</td>
-      <td>Paahtopaisti Burger</td>
-      <td>Rehu Burger</td>
+      <td>Matti</td>
+      <td>Kuikka</td>
+      <td>4/5, "Muutama binääri väärin"</td>
     </tr>
     <tr>
-      <td>Chicken BBQ</td>
-      <td>Mättö Burger</td>
-      <td>Rairuoho Burger</td>
+      <td>Jeesus</td>
+      <td>Nasaretilainen</td>
+      <td>5/5, "Taivaallisen hyvää"</td>
     </tr>
   </table>
 </div>
@@ -136,18 +111,20 @@ body, html {
 
   <div class="w3-half">
     <div class="w3-card">
-      
+      <img src="bg.jpg" alt="MättöBurger" style="width:50%">
       <div class="w3-container">
-      
+        <p>Our delicious Mättöburger</p>       <!-- Etsitään hyvät kuvat ja kuvateksti -->
+        
       </div>
     </div>
   </div>
 
   <div class="w3-half">
     <div class="w3-card">
-
-      <div class="w3-container">
-   
+      <img src="kana.jpg" alt="Kanaburger" style="width:30%">
+      <div class="w3-container"> <br> 
+        <p>Famous Kanaburger</p>
+        
       </div>
     </div>
   </div>

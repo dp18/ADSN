@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 
-<title>Yhteystiedot</title>
+<title>Etusivu</title>
 <!-- tähän esimerkiksi: <style> body { background-color: lightblue; </style>
 }   jolloin sivun taustan väri vaihtuu mihin sitten haluaa (CSS) -->
 
-<style>  
+<style> 
+
 
 body {
     font-family: "Comic Sans MS", cursive, sans-serif;
@@ -13,7 +14,7 @@ body {
 } 
 
 p {
-    font-family: cursive;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 16px;
 } 
 ul {
@@ -22,6 +23,12 @@ ul {
 	paddig: 0;
 	overflow: hidden;
 	background-color: #222;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	position: sticky;
+	position: -webkit-sticky; 
+	
 }
 li {
 	display: inline;
@@ -35,45 +42,22 @@ li a {
 	text-decoration: none;
 }
 li a:hover:not(active) {
-	background-color: #111;
+	background-color: red;
 }
 .active {
-	background-color: #4CAF50;
+	background-color: green;
+	
+div {
+	background-color: red;
 }
-
-
-body, html {
-    height: 100%;
 }
-
-
-.hero-image {
-    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("kartta.jpg");
-
-  
-    height: 50%;
-
- 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}		
-
-
-
 		
+}
+
+
+
+
+
 </style>
 
 
@@ -85,54 +69,45 @@ body, html {
 <body>
 
 <header class="w3-container w3-red">
-  <h1><center>Ravintola Asburger</center></h1>
+  <h1><center>Ravintola Asburger</center></h1>  
 </header>
+
 <ul>
 <li><a href="index.html">Etusivu</a></li>
 <li><a href="ruokalista.html">Ruokalista</a></li>
-<li><a href="omistajat.html">Yhteystiedot</a></li>
-<li><a href="omistajaten.html">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp In English</a></li>
+<li><a href="omistajat.html">Yhteystiedot</a></li> 
+<li><a href="indexen.html">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp In English</a></li>
 </ul>
 
 
-<div class="hero-image">
-  <div class="hero-text">
-    <h1>Sijaintimme kartalla</h1>
-  
-   
-  </div>
-</div>
-
-
-
-
+<center> <img src="logo.jpg" alt="Meidän logo" height="42%" width="42%"> </center>
 
 <div class="w3-container">
-  
+  <p> Hei! Tervetuloa mahtavaan Ravintolaamme, Ylhäältä löydätte kaikki menut ja tapahtumat.
 <br>
-<p>
-<br> <h2>Henkilökunta</h2></p>    
+Olemme monipuolisen ruokavalion edelläkävijöitä ja löydätte jokaisesta ravintoloistamme fantastiset herkut. <br>
+<br> <h2> Ravintolamme arvostelijoita</h2></p>
 
   <table class="w3-table w3-bordered w3-striped">
     <tr class="w3-red">
       <th>Etunimi</th>
       <th>Sukunimi</th>
-      <th>Työtehtävä</th>
+      <th>Pisteet</th>
     </tr>
     <tr>
-      <td>Dani</td>
-      <td>Holm</td>
-      <td>Kokki</td>
+      <td>Gordon</td>
+      <td>Ramsay</td>
+      <td>5/5, "Even better than my food"</td>
     </tr>
     <tr>
-      <td>Arttu</td>
-      <td>Jalava</td>
-      <td>Kuski</td>
+      <td>Matti</td>
+      <td>Kuikka</td>
+      <td>4/5, "Muutama binääri väärin"</td>
     </tr>
     <tr>
-      <td>Niko</td>
-      <td>Hormalainen</td>
-      <td>Kokki</td>
+      <td>Jeesus</td>
+      <td>Nasaretilainen</td>
+      <td>5/5, "Taivaallisen hyvää"</td>
     </tr>
   </table>
 </div>
@@ -141,18 +116,20 @@ body, html {
 
   <div class="w3-half">
     <div class="w3-card">
-  
+      <img src="bg.jpg" alt="MättöBurger" style="width:50%">
       <div class="w3-container">
-
+        <p>Meidän herkullinen Mättöburger</p>       <!-- Etsitään hyvät kuvat ja kuvateksti -->
+        
       </div>
     </div>
   </div>
 
   <div class="w3-half">
     <div class="w3-card">
-    
-      <div class="w3-container">
-      
+      <img src="kana.jpg" alt="Kanaburger" style="width:30%">
+      <div class="w3-container"> <br> 
+        <p>Suosituin Kanaburger</p>
+        
       </div>
     </div>
   </div>
